@@ -68,7 +68,7 @@
         }
         if(playerCon == "yes"){
             alert("There is a crossroads, do you go right to the forest, left towards the castle, fourthword towards the river, or home. this test will determine your determination to get to where you are going.");
-            var playerWay = prompt("fourthword, left, right, or home?");
+            var playerWay = prompt("forest, river, castle, or home?");
         }else{
           alert("you have returned home.")
           alert("the people in the village are angry.")
@@ -143,7 +143,31 @@
                }else{
                 alert("okay");
                 alert("your choice");
+                var pCon = prompt("You are at the " + playerWay + " what do you want to do, go in, or go around?");
             }
+            if (pCon == "go in"){
+                alert("You are about to go into the " + playerWay + " .");
+                var peN = prompt("Would you like to look for Traps before you " + pCon +" , yes or no?");
+            }else{
+                alert("you are going around the " + playerWay + "." );
+                var peN = prompt("Would you like to look for Traps before you " + pCon +" , yes or no?");
+            }
+            if(peN == "yes"){
+                alert("There are no traps here.");
+                var uniCorn = prompt(playerWel + ", " + playerWel2 + " there is a unicorn of in the distance, do you cautiously sneak up to it, or walk right up to it, 1 = cautiously, 2 = right up. ");
+            }else{
+                alert("Very well then.");
+                alert("There was a poison dart,");
+                alert("you die.");
+                alert("if you would like to start over, please reload.");
+            }
+            if (uniCorn = "1"){
+               alert("Wise choice," + playerWel + " and " + playerWel2);
+            }else{
+                alert("I wouldn't have done that if I were you.");
+                alert("you made the unicorn angry.");
+            }
+            
             
         </script>
     </body>
