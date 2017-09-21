@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <style>
+      background{
+      color: Black;
+      }
+      </style>
       
     </head>
     <body>
@@ -8,7 +13,10 @@
     
             var playerWel = prompt("Welcome, to this sci-fy, fantasy quest. What can we call you?");
             alert(playerWel + " nice to meet you.");
-        var playerWhat = prompt(playerWel + " Would you say you are best known for your bravery, wit or helpfulness?");
+            var reTurning =prompt("Are you a returing Player?");
+       if(reTurning == "no"){
+            var playerWhat = prompt(playerWel + " Would you say you are best known for your bravery, wit or helpfulness?");
+       }
         if (playerWhat == "bravery"){
             var playerWeak = prompt(playerWel + ", what would you say your greatest weakness is, your shoot first ask questions later attitude, or your ask questions shoot later attitude ?");
         }else if (playerWhat == "wit" ) {
@@ -146,7 +154,7 @@
                 alert("your choice");
                 var pCon = prompt("You are at the " + playerWay + " what do you want to do, go in, or go around?");
             }
-            if (pCon == "go in"){
+            if (pCon = "go in"){
                 alert("You are about to go into the " + playerWay + " .");
                 var peN = prompt("Would you like to look for Traps before you " + pCon +" , yes or no?");
             }else{
@@ -163,19 +171,25 @@
                 alert("you die.");
                 alert("if you would like to start over, please reload.");
             }
-            if (uniCorn = "1"){
+            if (uniCorn == "1"){
                alert("Wise choice," + playerWel + " and " + playerWel2);
-               var uniCorn_con =
+               var uniCorn_con = promt("Would you like to continue on too chapter 2. Yes, or no?");
                 
             }else{
                 alert("I wouldn't have done that if I were you.");
                 alert("you made the unicorn angry.");
             }
-            if (uniCorn ="1"){
+            if (uniCorn_con ="yes"){
                 alert("The unicorn has accepted you.");
                 var Player_Wel_chapter_2 = prompt("You have now entered Chapter 2 of your quest.");
+            }else{
+                alert("Well now you have to start all over.............................");
+                alert("Unless, you make it up to the unicorn....");
+                alert("at the begining there should be a thing were you can continue on from a certian point.");
             }
-            
+            if(reTurning = "yes"){
+                alert("Alrighty, you have now entered chapter2");
+            }
             
         </script>
     </body>
